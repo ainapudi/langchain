@@ -5,7 +5,7 @@ from langchain.llms import OpenAI
 st.title('🦜🔗 Quickstart App')
 st.write(
     "Has environment variables been set:",
-    os.environ["OPENAI_API_KEY"] == st.secrets["openai_secret_key"],
+    os.environ["OPENAI_API_KEY"] == st.secrets["OPENAI_API_KEY"],
 )
 
 def generate_response(input_text):
