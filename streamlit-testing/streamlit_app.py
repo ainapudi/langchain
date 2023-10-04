@@ -10,7 +10,9 @@ st.write(
 
 def generate_response(input_text):
   # openai_api_key = st.write("Secret Key", st.secrets["openai_secret_key"])
-  llm = OpenAI(temperature=0.7, openai_api_key=os.environ["OPENAI_API_KEY"])
+  # llm = OpenAI(temperature=0.7, openai_api_key=os.environ["OPENAI_API_KEY"])
+  llm = OpenAI(temperature=0.7)
+
   st.info(llm(input_text))
 
 with st.form('my_form'):
