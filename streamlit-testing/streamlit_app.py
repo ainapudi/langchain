@@ -41,4 +41,4 @@ with st.form('my_form'):
 
     st.info("testing")
     st.info(r.content.decode())
-    # generate_response(text)
+    generate_response(text)
