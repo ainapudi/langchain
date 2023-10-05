@@ -39,5 +39,6 @@ with st.form('my_form'):
                 'https://invoke-agent-bedrock.us-east-1.amazonaws.com',
                 data=payload)
 
+    st.info("testing")
     st.info(r.content.decode())
     # generate_response(text)
